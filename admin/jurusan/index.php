@@ -25,6 +25,7 @@ if (!isset($_SESSION['log']) || $_SESSION['role'] != 'admin') {
   <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
   <link href="../../assets/css/nucleo-svg.css" rel="stylesheet" />
+  <link href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.css" rel="stylesheet">
 
 
   <!-- CSS Files -->
@@ -91,6 +92,9 @@ if (!isset($_SESSION['log']) || $_SESSION['role'] != 'admin') {
   <script src="../../assets/js/plugins/perfect-scrollbar.min.js"></script>
   <script src="../../assets/js/plugins/smooth-scrollbar.min.js"></script>
   <script src="../../assets/js/plugins/chartjs.min.js"></script>
+    <script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
+
+  <script> new DataTable('table.display'); </script>
   <script>
     var ctx1 = document.getElementById("chart-line").getContext("2d");
 

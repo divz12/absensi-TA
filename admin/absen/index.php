@@ -175,14 +175,7 @@ if (!isset($_SESSION['log']) || $_SESSION['role'] != 'admin') {
 <?php include('../includes/footer.php'); ?>
 
 <!--   Core JS Files   -->
-          <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-          <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
-          <script src="https://cdn.datatables.net/buttons/1.5.6/js/dataTables.buttons.min.js"></script>
-          <script src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.bootstrap4.min.js"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
-          <script src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.html5.min.js"></script>
-          <script src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.print.min.js"></script>
-
+          
   <script src="../../assets/js/core/popper.min.js"></script>
   <script src="../../assets/js/core/bootstrap.min.js"></script>
   <script src="../../assets/js/plugins/perfect-scrollbar.min.js"></script>
@@ -286,6 +279,38 @@ if (!isset($_SESSION['log']) || $_SESSION['role'] != 'admin') {
   <script async defer src="https://buttons.github.io/buttons.js"></script>
   <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
   <script src="../../assets/js/argon-dashboard.min.js?v=2.0.4"></script>
+
+  <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+          <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+          <script src="https://cdn.datatables.net/buttons/1.5.6/js/dataTables.buttons.min.js"></script>
+          <script src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.bootstrap4.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+          <script src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.html5.min.js"></script>
+          <script src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.print.min.js"></script>
+
+                    <script>
+            $(document).ready(function() {
+              $('#myTable').DataTable({
+                dom: 'Bfrtip',
+                buttons: [{
+                    extend: 'pdfHtml5',
+                    orientation: 'portrait',
+                    pageSize: 'A4'
+                  },
+                  'copyHtml5',
+                  'excelHtml5',
+                  'csvHtml5',
+                  'print',
+                  // 'colvis',
+                ]
+              });
+            });
+          </script>
+
+          </script>
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
