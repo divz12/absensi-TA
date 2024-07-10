@@ -25,9 +25,13 @@ if (!isset($_SESSION['log']) || $_SESSION['role'] != 'admin') {
   <link href="../../assets/css/nucleo-icons.css" rel="stylesheet" />
   <link href="../../assets/css/nucleo-svg.css" rel="stylesheet" />
   <!-- Font Awesome Icons -->
+   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+
   <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
   <link href="../../assets/css/nucleo-svg.css" rel="stylesheet" />
   <link href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.css" rel="stylesheet">
+
 
   <!-- CSS Files -->
   <link id="pagestyle" href="../../assets/css/argon-dashboard.css?v=2.0.4" rel="stylesheet" />
@@ -90,7 +94,7 @@ if (!isset($_SESSION['log']) || $_SESSION['role'] != 'admin') {
             </div>
           </div>
       </div>
-    </div>
+   
 
 
 <?php include('../includes/footer.php'); ?>
@@ -101,7 +105,7 @@ if (!isset($_SESSION['log']) || $_SESSION['role'] != 'admin') {
   <script src="../../assets/js/plugins/perfect-scrollbar.min.js"></script>
   <script src="../../assets/js/plugins/smooth-scrollbar.min.js"></script>
   <script src="../../assets/js/plugins/chartjs.min.js"></script>
-  <script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
 
   <script> new DataTable('table.display'); </script>
   <script>

@@ -22,24 +22,24 @@
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
         <div style="margin-left: 7px;"></div>
-          <i class="fa fa-folder me-2 text-success text-sm opacity-10"></i><span class="nav-link-text ms-1">Data</span><i class="bi bi-chevron-down ms-auto"></i>
+          <i class="fa fa-folder me-2 text-success text-sm opacity-10"></i><span class="nav-link-text ms-1">Data</span>
         </a>
         
         <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
             <div style="margin-left: 40px;">
           <li>
             <a href="../../admin/siswa/index.php">
-              <i class="bi bi-circle"></i><span>Siswa</span>
+              <span>Siswa</span>
             </a>
           </li>
           <li>
             <a href="../../admin/kelas/index.php">
-              <i class="bi bi-circle"></i><span>Kelas</span>
+              </i><span>Kelas</span>
             </a>
           </li>
           <li>
             <a href="../../admin/jurusan/index.php">
-              <i class="bi bi-circle"></i><span>Jurusan</span>
+              </i><span>Jurusan</span>
             </a>
           </li>
         </ul>
@@ -91,7 +91,7 @@
                 <div class="navbar-nav align-items-center ms-auto">
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                            <img class="rounded-circle me-lg-2" src="../../assets/img/profile1.jpeg" alt="" style="width: 40px; height: 40px;">
+                            <img class="rounded-circle me-lg-2" src="../../assets/img/user.jpg" alt="" style="width: 40px; height: 40px;">
                             <span class="d-none d-lg-inline-flex">Admin</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end border-0 rounded-0 rounded-bottom m-0">

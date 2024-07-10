@@ -18,7 +18,11 @@ if (!isset($_SESSION['log']) || $_SESSION['role'] != 'admin') {
     Absensi - Rekap Absen
   </title>
   <!--     Fonts and icons     -->
-    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.css" rel="stylesheet">
+
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
   <!-- Nucleo Icons -->
   <link href="../../assets/css/nucleo-icons.css" rel="stylesheet" />
@@ -121,8 +125,9 @@ if (!isset($_SESSION['log']) || $_SESSION['role'] != 'admin') {
                 
             }
         </style>
+        
              <div class="container"  style="margin-bottom: 15px"></div>
-              <table id="myTable" class="myTable" style="width:100%">
+              <table id="" class="display" style="width:100%">
                 <thead>
                   <tr>
                     <th scope="col">NO.</th>
@@ -280,36 +285,13 @@ if (!isset($_SESSION['log']) || $_SESSION['role'] != 'admin') {
   <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
   <script src="../../assets/js/argon-dashboard.min.js?v=2.0.4"></script>
 
-  <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-          <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
-          <script src="https://cdn.datatables.net/buttons/1.5.6/js/dataTables.buttons.min.js"></script>
-          <script src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.bootstrap4.min.js"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
-          <script src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.html5.min.js"></script>
-          <script src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.print.min.js"></script>
+          <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+          
+        <script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
+        <script> new DataTable('table.display');</script>
 
-                    <script>
-            $(document).ready(function() {
-              $('#myTable').DataTable({
-                dom: 'Bfrtip',
-                buttons: [{
-                    extend: 'pdfHtml5',
-                    orientation: 'portrait',
-                    pageSize: 'A4'
-                  },
-                  'copyHtml5',
-                  'excelHtml5',
-                  'csvHtml5',
-                  'print',
-                  // 'colvis',
-                ]
-              });
-            });
-          </script>
-
-          </script>
-          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+          
 
 </body>
 

@@ -23,6 +23,11 @@ if (!isset($_SESSION['log']) || $_SESSION['role'] != 'admin') {
   <link href="../../assets/css/nucleo-icons.css" rel="stylesheet" />
   <link href="../../assets/css/nucleo-svg.css" rel="stylesheet" />
   <!-- Font Awesome Icons -->
+   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.css" rel="stylesheet">
+
   <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
   <link href="../../assets/css/nucleo-svg.css" rel="stylesheet" />
   <link href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.css" rel="stylesheet">
@@ -53,9 +58,9 @@ if (!isset($_SESSION['log']) || $_SESSION['role'] != 'admin') {
               <table id="" class="display" style="width:100%">
                 <thead>
                   <tr>
-                    <th scope="col">No</th>
-                    <th scope="col">Kelas</th>
-                    <th scope="col">Aksi</th>
+                    <th scope="col" class="text-center">No</th>
+                    <th scope="col" class="text-center">Kelas</th>
+                    <th scope="col" class="text-center">Aksi</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -67,8 +72,8 @@ if (!isset($_SESSION['log']) || $_SESSION['role'] != 'admin') {
                   ?>
 
                   <tr>
-                      <td><?php echo $no++ ?></td>
-                      <td><?php echo $row['nama_kelas'] ?></td>
+                      <td class="text-center"><?php echo $no++ ?></td>
+                      <td class="text-center"><?php echo $row['nama_kelas'] ?></td>
                       <td class="text-center">
                         <a href="edit-kelas.php?id=<?php echo $row['id'] ?>" class="btn btn-sm btn-primary">EDIT <i class="fa-solid fa-pen-to-square"></i></a>
                         <a href="hapus-kelas.php?id=<?php echo $row['id'] ?>" class="btn btn-sm btn-danger">HAPUS <i class="fa-solid fa-circle-xmark"></i></a>
