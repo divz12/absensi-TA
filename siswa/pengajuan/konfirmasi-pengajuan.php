@@ -103,7 +103,7 @@ $row = mysqli_fetch_array($result);
                 <br>
 
                 <button type="submit" class="btn btn-success">SIMPAN</button>
-                <button type="reset" class="btn btn-warning">RESET</button>
+                <button type="reset" class="btn btn-warning"><a href="pengajuan.php">KEMBALI</a></button>
 
               </form>
             </div>

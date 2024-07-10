@@ -81,7 +81,7 @@ $query = "SELECT tbl_siswa.*, tbl_kelas.nama_kelas, tbl_jurusan.nama_jurusan FRO
 
                 
                 <button type="submit" class="btn btn-success">SIMPAN</button>
-                <button type="reset" class="btn btn-warning">RESET</button>
+                <button type="reset" class="btn btn-warning"><a href="pulang.php">KEMBALI</a></button>
 
 
               </form>

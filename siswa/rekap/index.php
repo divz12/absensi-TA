@@ -69,7 +69,7 @@
           }
           ?>
       </table><br> <br>
-
+<!--
       <?php
       include('../../koneksi.php');
       $data_masuk = mysqli_query($connection, "SELECT * FROM tbl_rekap where no_kartu = $no_kartu AND keterangan='hadir'");
@@ -104,7 +104,9 @@
             <td class="text-center"><?php echo $jumlah_izin; ?></td>
             <td class="text-center"><?php echo $jumlah_alpa; ?></td>
           </tr>
+        -->
 
+        <button class="btn btn-primary"><a href="../../index.php" style="color: white;">KEMBALI</a></button>
 
 
 

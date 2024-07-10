@@ -49,6 +49,7 @@
                 <br>
 
                 <button type="submit" class="btn btn-success">ABSEN</button>
+                <button type="reset" class="btn btn-warning"><a href="../../index.php">KEMBALI</a></button>
 
               </form>
             </div>
