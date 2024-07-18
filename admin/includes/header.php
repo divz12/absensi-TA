@@ -1,3 +1,67 @@
+<?php
+
+$page = substr($_SERVER['SCRIPT_NAME'], strrpos($_SERVER['SCRIPT_NAME'], "/") + 1);
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="../../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../../assets/img/logo.png">
+
+ <title>
+        <?= $page == 'siswa.php' ? 'Data Siswa' : ''; ?>
+        <?= $page == 'tambah-siswa.php' ? 'Tambah Siswa' : ''; ?>
+        <?= $page == 'edit-siswa.php' ? 'Ubah Data Siswa' : ''; ?>
+        <?= $page == 'kelas.php' ? 'Data Kelas' : ''; ?>
+        <?= $page == 'tambah-kelas' ? 'Tambah Kelas' : ''; ?>
+        <?= $page == 'edit-kelas.php' ? 'Ubah Kelas' : ''; ?>
+        <?= $page == 'jurusan.php' ? 'Data Jurusan' : ''; ?>
+        <?= $page == 'tambah-jurusan.php' ? 'Tambah Jurusan' : ''; ?>
+        <?= $page == 'edit-jurusan.php' ? 'Ubah Jurusan' : ''; ?>
+        <?= $page == 'index.php' ? 'Pengajuan' : ''; ?>
+        <?= $page == 'pengajuan.php' ? 'Tambah Pengajuan' : ''; ?>
+        <?= $page == 'konfirmasi.php' ? 'Konfirmasi Data' : ''; ?>
+        <?= $page == 'absen.php' ? 'Rekap Absensi' : ''; ?>
+        <?= $page == 'absen-manual.php' ? 'Tambah Absen' : ''; ?>
+        <?= $page == 'konfirmasi-absen.php' ? 'Konfirmasi Masuk' : ''; ?>
+        <?= $page == 'konfirmasi-pulang.php' ? 'Konfirmasi Pulang' : ''; ?>
+        <?= $page == 'absen-cepat.php' ? 'Pengaturan Jam Pulang' : ''; ?>
+        <?= $page == 'pilih-kelas.php' ? 'Laporan - Kelas' : ''; ?>
+        <?= $page == 'pilih-tanggal.php' ? 'Laporan - Tanggal' : ''; ?>
+        <?= $page == 'pilih-nama.php' ? 'Laporan Absensi - Nama' : ''; ?>
+
+    </title>
+
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+
+  <!-- Nucleo Icons -->
+  <link href="../../assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="../../assets/css/nucleo-svg.css" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  <link href="../../assets/css/nucleo-svg.css" rel="stylesheet" />
+
+  <!-- DataTables CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.5/pagination.css" />
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/v/bs4-4.6.0/dt-2.0.8/af-2.7.0/b-3.0.2/fc-5.0.1/fh-4.0.1/r-3.0.2/sl-2.0.3/datatables.min.css" rel="stylesheet">
+ 
+  <!-- CSS Files -->
+  <link id="pagestyle" href="../../assets/css/argon-dashboard.css?v=2.0.4" rel="stylesheet" />
+</head>
+
+
+<body>
+
 <body class="g-sidenav-show   bg-gray-100">
   <div class="min-height-300 bg-primary position-absolute w-100"></div>
   <aside class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4 " id="sidenav-main">
@@ -28,17 +92,17 @@
         <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
             <div style="margin-left: 40px;">
           <li>
-            <a href="../../admin/siswa/index.php">
+            <a href="../../admin/siswa/siswa.php">
               <span>Siswa</span>
             </a>
           </li>
           <li>
-            <a href="../../admin/kelas/index.php">
+            <a href="../../admin/kelas/kelas.php">
               </i><span>Kelas</span>
             </a>
           </li>
           <li>
-            <a href="../../admin/jurusan/index.php">
+            <a href="../../admin/jurusan/jurusan.php">
               </i><span>Jurusan</span>
             </a>
           </li>
@@ -53,7 +117,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="../../admin/absen/index.php">
+          <a class="nav-link " href="../../admin/absen/absen.php">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
               <i class="fa fa-table me-2 text-danger text-sm opacity-10"></i>
             </div>

@@ -51,16 +51,19 @@ $jumlah_pengajuan = $data_pengajuan['jumlah_pengajuan'];
   <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
 
   <!-- Font Awesome Icons -->
-   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-
-    <link href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.css" rel="stylesheet">
-
   <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
   <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
 
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.5/pagination.css" />
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/v/bs4-4.6.0/dt-2.0.8/af-2.7.0/b-3.0.2/fc-5.0.1/fh-4.0.1/r-3.0.2/sl-2.0.3/datatables.min.css" rel="stylesheet">
+    
   <!-- CSS Files -->
   <link id="pagestyle" href="../assets/css/argon-dashboard.css?v=2.0.4" rel="stylesheet" />
-  <link href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.css" rel="stylesheet">
+
 
 </head>
 
@@ -101,7 +104,7 @@ div.dt-container {
         <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
             <div style="margin-left: 40px;">
           <li>
-            <a href="../admin/siswa/index.php">
+            <a href="../admin/siswa/siswa.php">
               <i class="bi bi-circle"></i><span>Siswa</span>
             </a>
           </li>
@@ -126,7 +129,7 @@ div.dt-container {
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="../admin/absen/index.php">
+          <a class="nav-link " href="../admin/absen/absen.php">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
               <i class="fa fa-table me-2 text-danger text-sm opacity-10"></i>
             </div>
@@ -293,11 +296,11 @@ div.dt-container {
                             <div class="card-body">
                             <div class="d-flex align-items-center justify-content-between mb-4">
                                 <h6 class="mb-0">Rekap Absen</h6>
-                                <a href="../admin/absen/index.php">Show All</a>
+                                <a href="../admin/absen/absen.php">Show All</a>
                             </div>
 
-                    <div class="container"  style="margin-bottom: 15px"></div>
-                    <table id="" class="display" style="width:100%">
+                    <div class="table-responsive">
+                      <table class="table table-striped table-bordered align-items-center justify-content-center">
                         <thead>
                         <tr>
                             <th scope="col">NO.</th>
@@ -375,7 +378,7 @@ div.dt-container {
       </div>
       <hr class="horizontal dark my-1">
       <div class="card-body pt-sm-3 pt-0 overflow-auto">
-        <!-- Sidebar Backgrounds -->
+        <!-- Sidebar Backgrounds 
         <div>
           <h6 class="mb-0">Sidebar Colors</h6>
         </div>
@@ -388,7 +391,7 @@ div.dt-container {
             <span class="badge filter bg-gradient-warning" data-color="warning" onclick="sidebarColor(this)"></span>
             <span class="badge filter bg-gradient-danger" data-color="danger" onclick="sidebarColor(this)"></span>
           </div>
-        </a>
+        </a> -->
         <!-- Sidenav Type -->
         <div class="mt-3">
           <h6 class="mb-0">Sidenav Type</h6>
@@ -424,10 +427,22 @@ div.dt-container {
   <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
   <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
   <script src="../assets/js/plugins/chartjs.min.js"></script>
-  <script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
-  <script>new DataTable('table.display');</script>
 
-  <script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="https://cdn.datatables.net/v/bs4-4.6.0/dt-2.0.8/af-2.7.0/b-3.0.2/fc-5.0.1/fh-4.0.1/r-3.0.2/sl-2.0.3/datatables.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
+
+<script>
+    let table = new DataTable('#myTable');
+
+    $(document).ready(function () {
+        $('.mySelect2').select2();
+    });
+
     
     var ctx1 = document.getElementById("chart-line").getContext("2d");
 

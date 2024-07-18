@@ -21,7 +21,7 @@ $query = "INSERT INTO tbl_kelas (nama_kelas) VALUES ('$nama_kelas')";
 if($connection->query($query)) {
 
     //redirect ke halaman index.php 
-    header("location: index.php");
+    header("location: kelas.php");
 
 } else {
 

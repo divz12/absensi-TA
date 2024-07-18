@@ -8,7 +8,7 @@ $id = $_GET['id'];
 $query = "DELETE FROM tbl_kelas WHERE id = '$id'";
 
 if($connection->query($query)) {
-    header("location: index.php");
+    header("location: kelas.php");
 } else {
     echo "DATA GAGAL DIHAPUS!";
 }

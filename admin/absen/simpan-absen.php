@@ -35,7 +35,7 @@ $query = "INSERT INTO tbl_rekap (no_kartu, nama_lengkap, nama_kelas, nama_jurusa
 if($connection->query($query)) {
 
     //redirect ke halaman index.php 
-    header("location: index.php");
+    header("location: absen.php");
 
 } else {
 

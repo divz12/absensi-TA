@@ -21,7 +21,7 @@ $query = "INSERT INTO tbl_jurusan (nama_jurusan) VALUES ('$nama_jurusan')";
 if($connection->query($query)) {
 
     //redirect ke halaman index.php 
-    header("location: index.php");
+    header("location: jurusan.php");
 
 } else {
 

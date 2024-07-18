@@ -18,7 +18,7 @@ $query = "UPDATE tbl_rekap SET keluar = NOW() WHERE id = '$id'";
 //kondisi pengecekan apakah data berhasil diupdate atau tidak
 if($connection->query($query)) {
     //redirect ke halaman index.php 
-    header("location: index.php");
+    header("location: absen.php");
 } else {
     //pesan error gagal update data
     echo "Data Gagal Diupate!";

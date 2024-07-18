@@ -8,7 +8,7 @@ $id = $_GET['id'];
 $query = "DELETE FROM tbl_siswa WHERE id = '$id'";
 
 if($connection->query($query)) {
-    header("location: index.php");
+    header("location: siswa.php");
 } else {
     echo "DATA GAGAL DIHAPUS!";
 }

@@ -24,7 +24,7 @@ $query = "INSERT INTO tbl_siswa (no_kartu, nama_lengkap, kelas_id, jurusan_id) V
 if($connection->query($query)) {
 
     //redirect ke halaman index.php 
-    header("location: index.php");
+    header("location: siswa.php");
 
 } else {
 

@@ -16,7 +16,7 @@ $query = "UPDATE tbl_siswa SET no_kartu = '$no_kartu', nama_lengkap = '$nama_len
 //kondisi pengecekan apakah data berhasil diupdate atau tidak
 if($connection->query($query)) {
     //redirect ke halaman index.php 
-    header("location: index.php");
+    header("location: siswa.php");
 } else {
     //pesan error gagal update data
     echo "Data Gagal Diupate!";
